@@ -454,6 +454,24 @@
                         </li>
                         <!-- End Work Item -->
 
+                        <!-- Work Item (Lightbox) -->
+                        <li class="work-item mix development">
+                            <a href="images/work/tc-lg.jpg" class="work-lightbox-link mfp-image">
+                                <div class="work-img">
+                                    <img src="images/work/tc.jpg" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h3 class="work-title">Comlumbia University</h3>
+                                    <div class="work-descr">
+                                        Web Development
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- End Work Item -->
+
+
+
                         
                     </ul>
                     <!-- End Works Grid -->
@@ -622,66 +640,77 @@
                         
                     </div>
                     
+
+
+
+
                     <!-- Contact Form -->                            
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            
-                            <form class="form contact-form" id="contact_form">
-                                <div class="clearfix">
-                                    
-                                    <div class="cf-left-col">
+
+                        <form id="form3" name="form3" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ziggen.wufoo.com/forms/q1hbxk2r140na1q/#public">
+
+                            <div class="col-md-8 col-md-offset-2">
+                                
+                                <form class="form contact-form" id="contact_form">
+                                    <div class="clearfix">
                                         
-                                        <!-- Name -->
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                                        <div class="cf-left-col">
+                                            
+                                            <!-- Name -->
+                                            <div class="form-group">
+                                                <input type="text" id="Field1" name="Field1" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                                            </div>
+                                            
+                                            <!-- Email -->
+                                            <div class="form-group">
+                                                <input type="email" id="Field4" name="Field4" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
+                                            </div>
+                                            
                                         </div>
                                         
-                                        <!-- Email -->
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
+                                        <div class="cf-right-col">
+                                            
+                                            <!-- Message -->
+                                            <div class="form-group">                                            
+                                                <textarea id="Field5" name="Field5" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                                            </div>
+                                            
                                         </div>
                                         
                                     </div>
                                     
-                                    <div class="cf-right-col">
+                                    <div class="clearfix">
                                         
-                                        <!-- Message -->
-                                        <div class="form-group">                                            
-                                            <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                                        <div class="cf-left-col">
+                                            
+                                            <!-- Inform Tip -->                                        
+                                            <div class="form-tip pt-20">
+                                                <i class="fa fa-info-circle"></i> All the fields are required
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="cf-right-col">
+                                            
+                                            <!-- Send Button -->
+                                            <div class="align-right pt-10">
+                                                <input id="saveForm" name="saveForm" class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn" type="submit" value="Submit Message">
+                                                <input type="hidden" id="idstamp" name="idstamp" value="p2aZB8SFsWikEOnVkEdKSzkafIfs/k4h8Qvt5b29+JE=" />
+                                            </div>
+                                            
                                         </div>
                                         
                                     </div>
                                     
-                                </div>
-                                
-                                <div class="clearfix">
                                     
-                                    <div class="cf-left-col">
-                                        
-                                        <!-- Inform Tip -->                                        
-                                        <div class="form-tip pt-20">
-                                            <i class="fa fa-info-circle"></i> All the fields are required
-                                        </div>
-                                        
-                                    </div>
                                     
-                                    <div class="cf-right-col">
-                                        
-                                        <!-- Send Button -->
-                                        <div class="align-right pt-10">
-                                            <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn">Submit Message</button>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                </div>
+                                    <div id="result"></div>
+                                </form>
                                 
-                                
-                                
-                                <div id="result"></div>
-                            </form>
-                            
-                        </div>
+                            </div>
+
+                        </form>
+
                     </div>
                     <!-- End Contact Form -->
                     
@@ -761,5 +790,8 @@
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>       
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         
+        <script src="js/wufoo.js"></script>
+
+
     </body>
 </html>
